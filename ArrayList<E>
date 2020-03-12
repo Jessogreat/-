@@ -11,3 +11,10 @@ void set(int index,E obj)
 E remove(int index) //注意要返回删除的元素
 void ensureCapacity(int capacity) //确保在不重新分配存储空间前提下能够保存指定多元素
 void trimToSize() //将存储容量削减到当前尺寸
+void clear()  //清除当前所有存储元素
+boolean contains(Object obj)  //查询是否存储obj
+int indexOf(Object obj) //返回第一次出现的下标，没有就返回-1
+boolean isEmpty() //查询是否为空
+boolean remove(Object obj)  //删除第一次出现的obj，没有返回false
+Object[] toArray()  //返回一个包含所有元素的数组(按顺序)
+String toString() //打印方式和数组一样
