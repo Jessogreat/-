@@ -1,0 +1,36 @@
+Object类
+方法：
+Class getClass()  //返回描述这个类的Class对象
+
+*：对任意Java类型(包括int等)，如String,语句String.class将返回描述String类的Class对象
+
+Class类
+方法：
+static Class forName(String className) //返回描述 类名为className的类 的Class对象
+String getName()  //返回类的名字
+Object newInstance()  //返回一个新实例储存在Object对象变量中
+Field[] getFields() //返回描述此类及超类的公有域的Class对象的数组
+Field[] getDeclaredFields() //返回描述此类所有域的Class对象的数组
+
+Field/Method/Constructor类(以Field类为例)
+相通的方法：
+Class getDeclaringClass() //返回一个描述这个域的Class类
+int getModifiers()  //返回一个描述这个域的修饰符的int值，使用Modifier类的方法可以分析这个int值
+String getName()  //返回这个域的类型名
+不相通的方法：
+Constructor类：
+Object newInstance(Object[] args) //构造一个这个构造器所属类的新实例
+Class[] getExceptionTypes() //返回描述构造器所声明的异常类型的Class数组
+Class[] getParameterTypes() //返回描述参数类型的Class数组
+
+Method类：
+Class getReturnType() //返回描述返回类型的Class对象
+Class[] getExceptionTypes()
+Class[] getParameterTypes()
+
+Modifier类
+方法：
+static String toString(int modifiers) //返回对应modifiers中位设置的修饰符的字符串表示
+static boolean isAbstract(int modifiers)
+余下类似还有很多种判断方法
+
