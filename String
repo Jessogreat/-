@@ -13,8 +13,8 @@ String substring(int beginIndex)
 String substring(int beginIndex,int endIndex) //返回从beginIndex开始到endIndex-1部分的子字符串
 String toLowerCase()
 String toUpperCase()  //返回小写\大写
-char charAt(int index) //返回第几个代码单元
-int codePointAt(int index) //(数代码单元)返回第几个码点
+char charAt(int index) //返回第index处代码单元
+int codePointAt(int index) //返回index处码点
 boolean equals(Object other) //若与other相同则返回true
 boolean equalsIgnoreCase(String other)  //相同返回true
 boolean startsWith(String prefix) //若开头是prefix则返回true
@@ -27,5 +27,5 @@ int lastIndexOf(String str)
 int lastIndexOf(String str,int fromIndex)
 int lastIndexOf(int codePoint,int fromIndex)
 int lastIndexOf(int codePoint,int fromIndex)  //与上面类似，寻找最后一次出现时的开始位置，从末端或fromIndex开始往回找，没找到返回-1
-int codePointCount(int startIndex,int endIndex) //(数代码单元)startIndex位置到endIndex-1位置有多少码点(若有未配对的单元，单独算一个码点)
+int codePointCount(int startIndex,int endIndex) //startIndex位置到endIndex-1位置有多少码点(若有未配对的单元，单独算一个码点)
 String trim() //返回删除了原字符串首尾的空格的新字符串
