@@ -1,0 +1,31 @@
+构造器：
+String()  //构造一个空串
+String(byte[] bytes)  
+String(byte[] bytes,int offset,int length)
+String(char[] value)
+String(char[] value,int offset,int count) //直接把char存储的字符转换为字符串
+String(int[] codepoint,int offset,int count) //用码点来构造
+String(StringBuilder builder)
+
+方法：
+int length() //代码单元个数，一般即为字符串长度
+String substring(int beginIndex)
+String substring(int beginIndex,int endIndex) //返回从beginIndex开始到endIndex-1部分的子字符串
+String toLowerCase()
+String toUpperCase()  //返回小写\大写
+char charAt(int index) //返回第几个代码单元
+int codePointAt(int index) //(数代码单元)返回第几个码点
+boolean equals(Object other) //若与other相同则返回true
+boolean equalsIgnoreCase(String other)  //相同返回true
+boolean startsWith(String prefix) //若开头是prefix则返回true
+boolean endsWith(String suffix) //若结尾是suffix则返回true
+int indexOf(String str)
+int indexOf(String str,int fromIndex)
+int indexOf(int codePoint)
+int indexOf(int codePoint,int fromIndex)  //返回对应字符串或对应码点表示的字符的开始位置，从位置0或fromIndex开始往后找，若没有找到则返回-1
+int lastIndexOf(String str)
+int lastIndexOf(String str,int fromIndex)
+int lastIndexOf(int codePoint,int fromIndex)
+int lastIndexOf(int codePoint,int fromIndex)  //与上面类似，寻找最后一次出现时的开始位置，从末端或fromIndex开始往回找，没找到返回-1
+int codePointCount(int startIndex,int endIndex) //(数代码单元)startIndex位置到endIndex-1位置有多少码点(若有未配对的单元，单独算一个码点)
+String trim() //返回删除了原字符串首尾的空格的新字符串
