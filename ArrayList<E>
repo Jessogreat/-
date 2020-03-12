@@ -1,0 +1,13 @@
+构造器：
+ArrayList<E>()  //创建一个空的(类似于空串，不是null)
+ArrayList<E>(int initialCapacity) //用制定容量创建一个(现在实际还是空的)
+
+方法：
+boolean add(E obj)  //在最后添加obj，永远返回true
+void add(int index,E obj)
+int size()  //当前元素个数
+E get(int index)
+void set(int index,E obj)
+E remove(int index) //注意要返回删除的元素
+void ensureCapacity(int capacity) //确保在不重新分配存储空间前提下能够保存指定多元素
+void trimToSize() //将存储容量削减到当前尺寸
