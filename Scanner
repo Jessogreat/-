@@ -1,0 +1,13 @@
+构造器：
+Scanner(InputStream in) //用给定的输入流构造对象
+Scanner(String str) //构造从给定字符串中读取数据的对象 
+Scanner(File f) //构造从文件中读取数据的对象
+
+方法：
+String nextLine() //读取下一行内容
+String next() //读取下一个单词
+int nextInt() 
+double nextDouble() //读取并转换下一个表示整数或浮点数的字符序列
+boolean hasNext() //检测输入中是否还有其它单词
+boolean hasNextDouble()
+boolean hasNextInt()
