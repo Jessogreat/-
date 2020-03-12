@@ -1,0 +1,13 @@
+构造器：
+StringBuilder() //空的
+
+方法：
+int length()  //返回代码单元数量
+StringBuilder append(String str)  //追加一个字符串并返回this
+StringBuilder append(char c)  //追加一个代码单元并返回this
+StringBuilder appendCodePoint(int cp) //追加一个码点并将其转换为一个或两个代码单元并返回this
+void setCharAt(int i,char c)  //将第i个代码单元设置为c
+StringBuilder insert(int offset,char c) //在offset位置插入一个代码单元并返回this
+StringBuilder insert(int offset,String str) //插入一个字符串并返回this
+StringBuilder delete(int startIndex，int endIndex) //删除从startIndex到endIndex-1部分的代码单元并返回this
+String toString() //返回一个构造器或缓冲器内容相同的字符串
