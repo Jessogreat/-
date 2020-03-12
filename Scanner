@@ -5,9 +5,17 @@ Scanner(File f) //构造从文件中读取数据的对象
 
 方法：
 String nextLine() //读取下一行内容
-String next() //读取下一个单词
+String next() //读取下一个token
 int nextInt() 
+还有nextDouble等等
 double nextDouble() //读取并转换下一个表示整数或浮点数的字符序列
-boolean hasNext() //检测输入中是否还有其它单词
-boolean hasNextDouble()
-boolean hasNextInt()
+boolean hasNext() //检测输入中是否还有其它token
+boolean hasNextLine()
+boolean hasNextDouble() //检测输入中下一个token能不能转换为一个double值
+boolean hasNextFloat() 
+boolean hasNextLong()
+boolean hasNextInt()  
+boolean hasNextShort()
+boolean hasNextByte()
+boolean hasNextBoolean()
+String toString() //返回字符串
