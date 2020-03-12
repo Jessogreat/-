@@ -1,0 +1,8 @@
+方法：
+static String toString(type[] a)  //对a中对个元素调用对应的的toString方法，将输出的字符串放在[]中，内部用逗号隔开
+static type[] copyOf(type[] a,int length) //浅拷贝，从a[0]开始，长度为length
+static type[] copyOfRange(type[] a ,int start,int end)  //浅拷贝，从a[start]到a[end-1]
+static void sort(type[] a)  //对实现了Comparable接口的类的对象的数组a，运用此类的compareTo方法对数组进行排序
+static int binarySearch(type[] a,int start,int end,type v)  //使用二分查找在a中查找v的下标，没找到返回负数r，-r-1为保持a有序v应插入的值
+static void fill(type[] a,type v) //将a元素全部设置为v
+static boolean equals(type[] a,type[] b)  //完全相同的数组返回true
