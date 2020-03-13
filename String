@@ -13,8 +13,9 @@ String substring(int beginIndex)
 String substring(int beginIndex,int endIndex) //返回从beginIndex开始到endIndex-1部分的子字符串
 String toLowerCase()
 String toUpperCase()  //返回小写\大写
-char charAt(int index) //返回第index处代码单元
-int codePointAt(int index) //返回index开始的码点
+char charAt(int index) //返回位置index处代码单元
+int offsetByCodePoints(int index,int offset) //返回从位置index开始的第offset个码点的开始的下标
+int codePointAt(int index) //返回位置index开始的码点，常与上面这个函数一起用来得到第i个码点值
 boolean equals(Object other) //若与other相同则返回true
 boolean equalsIgnoreCase(String other)  //相同返回true
 boolean startsWith(String prefix) //若开头是prefix则返回true
